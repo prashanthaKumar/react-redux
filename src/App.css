@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,96 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.headerContainer{
+  width: 100%;
+  color: #282c34;
+  background-color: #4783de;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.searchContainer{
+  background-color: #ebedf0;
+  margin: 8px;
+  padding: 4px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.repoContainer{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+    padding: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.repoCardWrapper{
+  display: block;
+    width: 458px;
+    height: 100px;
+    /*background-color: wheat;*/
+    font-size: 1em;
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.userInfoContainer{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.userDetail{
+  display: block;
+    min-width: 300px;
+    margin: 0px;
+    margin-left: 3px;
+    margin-right: 1px;
+    height: 32px;
+}
+
+input{
+  padding: 4px;
+  margin: 4px;
+  font-size: 1em;
+  min-width: 200px;
+  margin-left: 10px
+}
+#userSubmit{
+  min-width: auto;
+}
+body{
+  background-color: #282c34;
+}
+form{
+  text-align: center;
+}
+p{
+  margin-top: 0.5em;
+  margin-left: 4px;
+}
+.hover-zoom {
+  -moz-transition:all 0.3s;
+  -webkit-transition:all 0.3s;
+   transition:all 0.3s
+}
+.hover-zoom:hover {
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+   transform: scale(2);
 }
