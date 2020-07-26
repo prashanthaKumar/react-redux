@@ -7,7 +7,6 @@ export const fetchUserInfo =  (argUserName) =>{
         .get(`https://api.github.com/users/${argUserName}`)
         .then(response => {
             const user = response.data;
-            console.log(user)
             dispatch(fetchUserSuccess(user));
             dispatch(fetchUserRepoList(user.repos_url))
         })
@@ -20,17 +19,18 @@ export const fetchUserInfo =  (argUserName) =>{
 
 export const fetchUserRepoList = (argRepoLink) =>{
     return dispatch =>{
-        console.log("argRepoLink", `${argRepoLink}?sort=stars&order=desc`);
         axios
         .get(argRepoLink)
         .then(response =>{
             const list = response.data;
-            console.log(list);
+            if(list.length === 0){
+                alert("User do not have repo");
+            }
             dispatch(fetchRepoListSuccess(list));
         })
         .catch(error =>{
             //const errorMsg =  error.message;
-            alert("User repo not found");
+            alert("No repo found");
         })
     }
 }

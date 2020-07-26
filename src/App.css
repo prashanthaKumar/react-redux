@@ -64,38 +64,37 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0px;
-    padding: 0px;
-    margin-left: 8px;
-    margin-right: 8px;
+  padding: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .repoCardWrapper{
   display: block;
-    width: 458px;
-    height: 100px;
-    /*background-color: wheat;*/
-    font-size: 1em;
-    padding: 4px;
-    margin: 4px;
-    border: 1px solid #000;
-    border-radius: 4px;
+  width: 458px;
+  height: 120px;
+  font-size: 1em;
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
 .userInfoContainer{
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
-    margin-left: 10px;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 .userDetail{
   display: block;
-    min-width: 300px;
-    margin: 0px;
-    margin-left: 3px;
-    margin-right: 1px;
-    height: 32px;
+  min-width: 300px;
+  margin: 0px;
+  margin-left: 3px;
+  margin-right: 1px;
+  height: 32px;
 }
 
 input{
@@ -127,4 +126,56 @@ p{
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
    transform: scale(2);
+}
+.repoDetail{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+  max-height:34px;
+}
+.repoCardWrapper div >p{
+  margin-top: 0px;
+}
+.descDetail{
+  display: flex;
+  margin: 0px;
+  padding: 2px;
+  justify-content: space-between;
+  background-color: #efeff4;
+  height: 55px;
+  margin-top: 5px;
+  padding-top: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.starWrapper{
+  display: flex;
+}
+.descDetail > p{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 6px;
+}
+.langDetail{
+  background-color: #29579C;
+  width: fit-content;
+  color: #ffffff;
+  padding: 2px;
+  padding-right: 4px;
+}
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+  color:#29579C;
+}
+a:hover {
+  color: #000000;
+}
+.repoWrapper{
+  align-items: flex-end;
+    display: flex;
 }

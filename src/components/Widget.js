@@ -8,6 +8,7 @@ class Widget extends React.Component{
         super(props)
         this.validateForm = this.validateForm.bind(this);
     }
+    // Validate blank space in search field
     validateForm(event){
         event.preventDefault();
         let enterdUserName =  event.target.elements.gitUser;
@@ -21,15 +22,13 @@ class Widget extends React.Component{
         }
     }
 
-
     render(){
         const {user, repoList} = this.props;
         const userName = user.name ? user.name : "Not avalable";
         const city = user.location ? user.location : "Not avalable";
         const followers = user.followers ? user.followers : "Not avalable";
-        const avatar = user.avatar_url ? <img class="hover-zoom"  src={user.avatar_url} width="auto" height="38px" alt="Profile picture"></img> : null;
-        const renderRepoTile = repoList.length>0 ? repoList.map((item, i) => <Repoard key={item.id+i} data={item} ></Repoard>) : null ;
-                                
+        const avatar = user.avatar_url ? <img className="hover-zoom"  src={user.avatar_url} width="auto" height="38px" alt="Profile Avatar"></img> : null;
+        const renderRepoTile = repoList.length>0 ? repoList.map((item, i) => <Repoard key={item.id+i} data={item} ></Repoard>) : null ;                     
         return(
             <div className="container" >
                 <div className="headerContainer" >
