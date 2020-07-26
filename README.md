@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About Repo
-This assignment is about to seaarch GitHub user and list dowin his respos
+This assignment is about to search GitHub user and list down user's respo
 
 ## Available Scripts
 
