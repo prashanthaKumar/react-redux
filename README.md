@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This assignment is about to seaarch GitHub user and list dowin his respos
 
 ## Available Scripts
 
