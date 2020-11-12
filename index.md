@@ -2,7 +2,8 @@
 
 You can use the [editor on GitHub](https://github.com/prashanthaKumar/search-user-repo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Search Github user and list down repos.
+ReactJS, Redux, JavaScript,HTML and CSS
 
 ### Markdown
 
